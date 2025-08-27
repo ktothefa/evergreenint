@@ -27,7 +27,7 @@
         /* Navigation */
         .navbar {
             background: rgba(255, 255, 255, 0.95);
-            padding: 1rem 0;
+            width: 100%;
             position: fixed;
             top: 0;
             left: 0;
@@ -39,26 +39,29 @@
         }
 
         .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
+            
+            
+            padding: 0.8rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: nowrap;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
+            
+            font-size: 1.4rem;
             font-weight: 700;
             color: var(--primary-green);
             text-decoration: none;
+            white-space: nowrap;
         }
 
         .logo i {
             font-size: 2rem;
+            margin-right: 8px;
         }
 
         .nav-menu {
@@ -878,6 +881,18 @@
                 padding: 1rem 2rem;
                 box-shadow: 0 2px 20px rgba(0,0,0,0.1);
             }
+
+             .logo {
+        font-size: 1rem;       /* shrink slightly for mobile */
+        white-space: normal;   /* allow text to wrap */
+        line-height: 1.2;      /* reduce spacing between lines */
+        max-width: 100%;       /* use full space */
+    }
+
+    
+
+
+  
 
             .nav-menu.active {
                 display: flex;
