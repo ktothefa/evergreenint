@@ -885,7 +885,7 @@
              .logo {
         font-size: 1rem;       /* shrink slightly for mobile */
         white-space: normal;   /* allow text to wrap */
-        line-height: 1.2;      /* reduce spacing between lines */
+        line-height: 1.0;      /* reduce spacing between lines */
         max-width: 100%;       /* use full space */
     }
 
